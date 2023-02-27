@@ -62,6 +62,13 @@ app.post('/decode', upload.single('imageData'), async (req, res) => {
 });
 
 
+app.post('/loadqr', (req, res) => {
+
+  console.log(req.body.uid);
+  console.log(req.body.rack);
+ 
+  res.send('data loaded succesfully ');
+});
 
 
 
